@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnStartProgressingOnClick(View view) {
         ProgressBar pBar1 = findViewById(R.id.pbar1);
+        pBar1.setProgress(0);
 
         Thread thread = new Thread(new Runnable() {
             @Override
