@@ -18,6 +18,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // change the theme randomly based on th uptime
+        if (SystemClock.uptimeMillis() % 2 == 0 )
+            setTheme(R.style.Theme_UIBasicsMore_Lavender);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
